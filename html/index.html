@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Veterinario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url(../img/bg-img.jpg);
+            background-size: cover;
+            background-position: 12%;
+        }
+        .cyf{
+            font-size: 30px;
+        }
+        .tarjeta1{
+            color: #fff;
+            border-width: 0px;
+            border-color: #ffffffa0;
+            display: flex;
+            flex-direction: row;
+            position: center;
+            border-radius: 15px;
+        }
+        .todo{
+            background: linear-gradient(to right,#161617c0, #28272b9e);
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(
+                autofit, 
+                minmax(
+                    150px,
+                    1fr
+                )
+            );
+            gap: 16px;
+        }
+        .card1{
+            border-radius: 15px;
+            width: 100px;
+            color: white;
+            background-color: #48483094;
+
+        }
+        .cepsp{
+            display: flex;
+            flex-direction: row;
+        }
+        .cepsp2{
+            border-radius: 15px;
+            background-color: #28272bc5;
+        }
+        .imagencuidadoperro{
+            border-color: #161617;
+            border-radius: 10%;
+            text-decoration: none;
+        }
+        .vermas{
+            text-decoration: none;
+        }
+        input{
+            border-radius: 8px;
+            placeholder{
+                font-size: 10px;
+            }
+        }
+        .boton{
+            border-color: #161617;
+
+        }
+        .boton:hover{
+            background-color:#161617;
+        }
+        .catalogo1:hover{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .catalogo2:hover{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .catalogo3:hover{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .catalogo4:hover{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo card p-2 container mt-5" style="border: 1px #8b8b8b solid;">
+        <div class="container mt-3 border-4 tarjeta1">
+            <div class="cyf container p-5 .col-sm-">
+                <h3>CENTRO VETERINARIO</h3>
+                <div class="ml-2">
+                <h1 style="font-size: 70px;">Caninos</h1>
+                <h1 style="font-size: 70px; margin-left: 90px;">&</h1>
+                <h1 class="mr-4" style="font-size: 70px; margin-left: 10px;">Felinos</h1>
+                </div>
+            </div>
+            <div class=" .col-sm-">
+                <img src="../img/dog_cat.png" alt="dog_cat.png" width="550">
+            </div>
+        </div>
+        <div class="navbar p-4 container barra .col-sm-" style="flex-direction: row-reverse;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                  <a class="navbar-brand button catalogo1" href="#" style="color: #fff;">Servicios</a>
+                  <a class="navbar-brand button catalogo2" href="#" style="color: #fff;">Productos</a>
+                  <a class="navbar-brand button catalogo3" href="#" style="color: #fff;">Guarderia</a>
+                  <a class="navbar-brand button catalogo4" href="#" style="color: #fff;">Promociones</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="contenido row p-5">
+        <div class="col p-3">
+            <div class="card container w-auto row card1 p-3" style="border: 1px solid #fff;">
+                <div class="container p-5 cepsp">
+                    <div class="p-3">
+                        <h3>Cuidados y educacion para tu perro</h3>
+                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi odit labore non quisquam numquam praesentium sunt nesciunt nemo, provident ipsa culpa maiores, excepturi quia ex suscipit distinctio iste adipisci!</p>
+                    </div>
+                    <img src="../img/dog_cuidado.jpg" alt="dog_cuidado.jpg" width="160" class="mt-auto">
+                </div>
+                <h5 class="mt--5 imagencuidadoperro" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
+            </div>
+            <div class="card container w-auto row card1 p-3" style="border: 1px solid #fff;">
+                <div class="container p-5 cepsp">
+                    <div class="p-3">
+                        <h3>Salir de viaje con tu mascota</h3>
+                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora repellendus maxime doloremque accusantium cumque repudiandae autem eius impedit nesciunt, eligendi, architecto non quia asperiores tempore aut modi numquam eaque!</p>
+                    </div>
+                    <img src="../img/dog_paseo.jpg" alt="dog_cuidado.jpg" width="160" class="mt-auto">
+                </div>
+                <h5 class="mt--5 imagencuidadoperro" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
+            </div>
+        </div>
+        <div class="cepsp2 card col p-0" style="border: 1px #fffafa solid; border-radius: 3px;">
+            <h3 class="card container p-3" style="background-color: #161617c0; text-align: center; font-size: 100%; color: antiquewhite; "> Solicitar cita medica </h3>
+            <div class="inputs p-2 mt-5 text-center" style="border-radius: 10%;"> 
+                <label for="mascota" style="text-align: start; color: white;">MASCOTA:</label>
+                <input type="text" placeholder="Ingrese nombre" id="mascota">
+            </div> 
+            <div class="inputs p-2 mt-5 text-center">
+                <label for="edad" style="text-align: start; color: white;">EDAD:</label>
+                <input type="number" maxlength="2" placeholder="Ingrese edad" id="edad">
+            </div>
+            <div class="inputs p-2 mt-5 text-center">
+                <label for="raza" style="text-align: start; color: white;">RAZA:</label>
+                <input type="text" placeholder="Ingrese raza" id="raza">
+            </div>
+            <div class="inputs p-2 mt-5 text-center">
+                <label for="fecha" style="text-align: start; color: white;">FECHA:</label>
+                <input type="date" id="fecha">
+            </div>
+            <div class="inputs p-2 mt-5 text-center">
+                <label for="hora" style="text-align: start; color: white;">HORA:</label>
+                <input type="datetime" id="hora">
+            </div>
+            <div class="inputs p-2 mt-5 text-center">
+                <label for="amo" style="text-align: start; color: white;">AMO:</label>
+                <input type="text" placeholder="Ingrese nombre del amo" id="amo">
+            </div>
+            <div class="button p-5 mt-3" style="text-align: center;">
+               <button class="btn btn-primary boton">Enviar</button>
+            </div>
+        </div>
+        <div class="infoadi p-3 h-100">
+            <div class="container-fluid card p-4" style="background-color: #28272b9d; height: 25vh; border-radius: 20px; color: antiquewhite; text-align: center; border: 1px rgb(255, 255, 255) solid;">
+                <h3 class="" style="font-size: 25px; ">Contactenos</h3>
+                <h6>Linea gratuita: 018000-00001</h6>
+                <h6>Correo: preguntas@caninosyfelinos.com</h6>
+                <br>
+                <footer class="">
+                    &copy; Sergio Rondon 2023
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
