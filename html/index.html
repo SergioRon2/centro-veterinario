@@ -27,14 +27,6 @@
             background: linear-gradient(to right,#161617c0, #28272b9e);
             border-radius: 20px;
             display: grid;
-            grid-template-columns: repeat(
-                autofit, 
-                minmax(
-                    150px,
-                    1fr
-                )
-            );
-            gap: 16px;
         }
         .card1{
             border-radius: 15px;
@@ -56,118 +48,101 @@
             border-radius: 10%;
             text-decoration: none;
         }
+        .vermas :hover :focus{
+            color: white;
+        }
         .vermas{
             text-decoration: none;
+            transition: color 200ms ease-in-out;
         }
         input{
             border-radius: 8px;
-            placeholder{
-                font-size: 10px;
-            }
         }
         .boton{
             border-color: #161617;
-
+            transition: color 200ms ease-in-out;
         }
         .boton:hover{
-            background-color:#161617;
+            background-color:#ffffff;
+            color: #161617;
         }
-        .catalogo1:hover{
-            font-weight: bold;
-            font-size: 20px;
+        .catalogo{
+            color: #fff;
+            transition: color 200ms ease-in-out;
         }
-        .catalogo2:hover{
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .catalogo3:hover{
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .catalogo4:hover{
-            font-weight: bold;
-            font-size: 20px;
+        .catalogo:hover{
+            color: #927b7b;
         }
     </style>
 </head>
 <body>
-    <div class="todo card p-2 container mt-5" style="border: 1px #8b8b8b solid;">
-        <div class="container mt-3 border-4 tarjeta1">
-            <div class="cyf container p-5 .col-sm-">
-                <h3>CENTRO VETERINARIO</h3>
-                <div class="ml-2">
-                <h1 style="font-size: 70px;">Caninos</h1>
-                <h1 style="font-size: 70px; margin-left: 90px;">&</h1>
-                <h1 class="mr-4" style="font-size: 70px; margin-left: 10px;">Felinos</h1>
+    <div class="container p-1">
+        <div class="todo card container-fluid p-1 mt-3" style="border: 1px #8b8b8b solid;">
+            <div class="container-fluid border-4 tarjeta1">
+                <div class="cyf container-fluid p-5 ">
+                    <h3>CENTRO VETERINARIO</h3>
+                    <div class="ml-2">
+                    <h1 style="font-size: 70px;">Caninos</h1>
+                    <h1 style="font-size: 70px; margin-left: 90px;">&</h1>
+                    <h1 class="mr-4" style="font-size: 70px; margin-left: 10px;">Felinos</h1>
+                    </div>
+                </div>
+                <div class=" .col-sm-">
+                    <img src="../img/dog_cat.png" alt="dog_cat.png" width="550">
                 </div>
             </div>
-            <div class=" .col-sm-">
-                <img src="../img/dog_cat.png" alt="dog_cat.png" width="550">
+            <div class="navbar p-4 container barra .col-sm-" style="flex-direction: row-reverse;">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid text-white">
+                      <a class="navbar-brand button catalogo" href="#">Servicios</a>
+                      <a class="navbar-brand button catalogo" href="#">Productos</a>
+                      <a class="navbar-brand button catalogo" href="#">Guarderia</a>
+                      <a class="navbar-brand button catalogo" href="#">Promociones</a>
+                    </div>
+                </nav>
             </div>
-        </div>
-        <div class="navbar p-4 container barra .col-sm-" style="flex-direction: row-reverse;">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid p-0">
-                  <a class="navbar-brand button catalogo1" href="#" style="color: #fff;">Servicios</a>
-                  <a class="navbar-brand button catalogo2" href="#" style="color: #fff;">Productos</a>
-                  <a class="navbar-brand button catalogo3" href="#" style="color: #fff;">Guarderia</a>
-                  <a class="navbar-brand button catalogo4" href="#" style="color: #fff;">Promociones</a>
-                </div>
-            </nav>
         </div>
     </div>
     <div class="contenido row p-5">
-        <div class="col p-3">
-            <div class="card container w-auto row card1 p-3" style="border: 1px solid #fff;">
+        <div class="col p-5 gap-3" style="display: flex; flex-direction: column;">
+            <div class="card container w-auto row card1 p-5" style="border: 1px solid #fff;">
                 <div class="container p-5 cepsp">
                     <div class="p-3">
                         <h3>Cuidados y educacion para tu perro</h3>
-                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi odit labore non quisquam numquam praesentium sunt nesciunt nemo, provident ipsa culpa maiores, excepturi quia ex suscipit distinctio iste adipisci!</p>
+                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi odit labore non quisquam numquam praesentium sunt nesciunt nemo, provident ipsa culpa maiores, excepturi quia ex suscipit distinctio iste adipisci!</p>
                     </div>
                     <img src="../img/dog_cuidado.jpg" alt="dog_cuidado.jpg" width="160" class="mt-auto">
                 </div>
-                <h5 class="mt--5 imagencuidadoperro" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
+                <h5 class="mt-5" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
             </div>
             <div class="card container w-auto row card1 p-3" style="border: 1px solid #fff;">
                 <div class="container p-5 cepsp">
                     <div class="p-3">
                         <h3>Salir de viaje con tu mascota</h3>
-                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora repellendus maxime doloremque accusantium cumque repudiandae autem eius impedit nesciunt, eligendi, architecto non quia asperiores tempore aut modi numquam eaque!</p>
+                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora repellendus maxime doloremque accusantium cumque repudiandae autem eius impedit nesciunt, eligendi, architecto non quia asperiores tempore aut modi numquam eaque!</p>
                     </div>
                     <img src="../img/dog_paseo.jpg" alt="dog_cuidado.jpg" width="160" class="mt-auto">
                 </div>
-                <h5 class="mt--5 imagencuidadoperro" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
+                <h5 class="mt-5 imagencuidadoperro" style="text-align: center; color: antiquewhite;"><a href="#" class="vermas">Ver mas</a></h5>
             </div>
         </div>
-        <div class="cepsp2 card col p-0" style="border: 1px #fffafa solid; border-radius: 3px;">
-            <h3 class="card container p-3" style="background-color: #161617c0; text-align: center; font-size: 100%; color: antiquewhite; "> Solicitar cita medica </h3>
-            <div class="inputs p-2 mt-5 text-center" style="border-radius: 10%;"> 
-                <label for="mascota" style="text-align: start; color: white;">MASCOTA:</label>
-                <input type="text" placeholder="Ingrese nombre" id="mascota">
-            </div> 
-            <div class="inputs p-2 mt-5 text-center">
-                <label for="edad" style="text-align: start; color: white;">EDAD:</label>
-                <input type="number" maxlength="2" placeholder="Ingrese edad" id="edad">
+        <div class="cepsp2 card col p-0" style="border: 1px #fffafa solid;">
+            <h3 class="card container p-3" style="background-color: #161617c0; text-align: center; font-size: 100%; color: antiquewhite; border-radius: 15px 15px 0 0; border: 1px solid antiquewhite;"> SOLICITAR CITA MEDICA </h3>
+            <div class="login p-2" style="display: flex; flex-direction: column;">
+                <label for="mascota" style="text-align: start; color: white; text-align: center; margin-top: 40px;">MASCOTA:</label>
+                <input type="text" placeholder="Ingrese nombre" id="mascota" style="text-align: center; width: 20rem; margin: auto;">
+                <label for="edad" style="text-align: start; color: white; text-align: center; margin-top: 40px;">EDAD:</label>
+                <input type="number" maxlength="2" placeholder="Ingrese edad" id="edad" style="text-align: center; width: 20rem; margin: auto;">
+                <label for="raza" style="text-align: start; color: white; text-align: center; margin-top: 40px;">RAZA:</label>
+                <input type="text" placeholder="Ingrese raza" id="raza" style="text-align: center; width: 20rem; margin: auto;">
+                <label for="fecha" style="text-align: start; color: #fff; text-align: center; margin-top: 40px;">FECHA:</label>
+                <input type="date" id="fecha" style="text-align: center; width: 20rem; margin: auto;">
+                <label for="hora" style="text-align: start; color: white; text-align: center; margin-top: 40px;">HORA:</label>
+                <input type="datetime" id="hora" style="text-align: center; width: 20rem; margin: auto;">
+                <label for="amo" style="text-align: start; color: white; text-align: center; margin-top: 40px;">AMO:</label>
+                <input type="text" placeholder="Ingrese nombre del amo" id="amo" style="text-align: center; width: 20rem; margin: auto;">
             </div>
-            <div class="inputs p-2 mt-5 text-center">
-                <label for="raza" style="text-align: start; color: white;">RAZA:</label>
-                <input type="text" placeholder="Ingrese raza" id="raza">
-            </div>
-            <div class="inputs p-2 mt-5 text-center">
-                <label for="fecha" style="text-align: start; color: white;">FECHA:</label>
-                <input type="date" id="fecha">
-            </div>
-            <div class="inputs p-2 mt-5 text-center">
-                <label for="hora" style="text-align: start; color: white;">HORA:</label>
-                <input type="datetime" id="hora">
-            </div>
-            <div class="inputs p-2 mt-5 text-center">
-                <label for="amo" style="text-align: start; color: white;">AMO:</label>
-                <input type="text" placeholder="Ingrese nombre del amo" id="amo">
-            </div>
-            <div class="button p-5 mt-3" style="text-align: center;">
-               <button class="btn btn-primary boton">Enviar</button>
-            </div>
+            <button class="btn btn-primary boton" style="margin: auto; border: none;">Enviar</button>
         </div>
         <div class="infoadi p-3 h-100">
             <div class="container-fluid card p-4" style="background-color: #28272b9d; height: 25vh; border-radius: 20px; color: antiquewhite; text-align: center; border: 1px rgb(255, 255, 255) solid;">
